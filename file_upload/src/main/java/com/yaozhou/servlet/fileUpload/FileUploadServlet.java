@@ -131,6 +131,7 @@ public class FileUploadServlet extends HttpServlet {
                 String uploadFileName = fileItem.getName();
                 System.out.println("上传的文件名: " + uploadFileName);
                 if (uploadFileName.trim().equals("") || uploadFileName == null) {
+                    //如果为空，直接下一个文件
                     continue;
                 }
 
